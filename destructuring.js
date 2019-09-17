@@ -22,6 +22,9 @@ var carDetails = {
 */
 
 //Code Here
+var {color, make, model, year} = {color: 'red', make: 'toyota', model: 'tacoma', year: 1994}
+
+
 
 
 
@@ -35,7 +38,7 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  const {title, firstName, lastName} = obj;
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -54,6 +57,11 @@ function greeting( obj ) {
 */
 
 //Code Here
+var totalPopulation = (obj) => {
+  const {utah = 3, california = 7, texas = 5, arizona = 1} = obj;
+  const total = utah + california + texas + arizona;
+  return total;
+};
 
 
 
@@ -68,6 +76,7 @@ function greeting( obj ) {
 */
 
 //Code Here
+
 
 
 
@@ -87,7 +96,11 @@ function greeting( obj ) {
 
 //Code Here
 
-
+function largeNumbers( obj ) {
+  var {first = 10, second = 30, third = 40} = obj;
+  return (obj[key]);
+}
+  
 
 ////////// PROBLEM 6 //////////
 
@@ -98,5 +111,3 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
